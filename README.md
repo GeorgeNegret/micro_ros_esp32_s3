@@ -1,17 +1,17 @@
-# micro_ros_stm32_template 
+# micro_ros_esp32_template 
 
 Boilerplate to create a project with:
 
-**STM32 + Ethernet + micro-ROS + FreeRTOS + Arduino + PlatformIO**  
+**ESP32 + wifi + micro-ROS + FreeRTOS + Arduino + PlatformIO**  
 
 ## Default config
 
-STM32F407 + Ethernet (eg. STM32-E407 Olimex board) directly connected with Ethernet cable to a computer.
+ESP32-s3 + wifi
 
 | device | IP:PORT |
 | - | - |
-| Client (STM32F407 + Ethernet) | `192.168.1.177` |
-| Agent (user's laptop) | `192.168.1.176:8888` |
+| Client (ESP32 | `192.168.1.105` |
+| Agent (user's laptop) | `192.168.1.106:8888` |
 
 Please set a static IP address on your laptop, eg. with netplan:
 
@@ -27,7 +27,7 @@ network:
         - 192.168.1.176/24
 ```
 
-## Flashing STM32
+## Flashing Esp32
 
 Click **[Use this template](https://github.com/husarion/micro_ros_stm32_template/generate)** button, and clone your own copy of this repo.
 
